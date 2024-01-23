@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 async function sendEmail(name, message) {
   const mailOptions = {
     from: `<${String(process.env.EMAIL_ID)}>`, // replace with your Gmail email address
-    to: "subharthi76@gmail.com",
+    to: String(process.env.MAIL_TO),
     subject: "New DM Portfolio!",
     text: `Name: ${name}\nMessage: \n${message}`,
   };
