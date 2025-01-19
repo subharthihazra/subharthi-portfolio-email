@@ -12,12 +12,7 @@ app.use(express.json());
 // cors origin
 app.use(
   cors({
-    origin: [
-      "https://subharthi-portfolio.vercel.app/",
-      "https://subharthi-portfolio.vercel.app",
-      "http://subharthi-portfolio.vercel.app/",
-      "http://subharthi-portfolio.vercel.app",
-    ],
+    origin: true,
   })
 );
 
